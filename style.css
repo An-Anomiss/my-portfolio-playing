@@ -1,0 +1,71 @@
+/* moves on 2 axes*/
+h1 {
+  transform: translateX(-200px);
+}
+/* let's rotate it */
+h2 {
+  transform: rotate(50deg) translate(400px, 100px);
+}
+/* 2 var- first is height second is */
+h3 {
+  transform: scale(0.5, 2) skewX(32ndeg);
+}
+/* skew function distorsion on one axe skewX(30deg
+rotateX/Y/Z din punct de origine centru - pivot*/
+div {
+  background: red;
+  height: 180px;
+  width: 100px;
+  transform: translate(50px) rotateX(100deg);
+}
+section {
+  background: seagreen;
+  height: 100px;
+  width: 200px;
+  margin: 0 auto;
+  animation-name: colorChange;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  /* transition: transform 0.3s ease-in-out;
+  transition: transform 1s, background 5s; /* width- transition only in width
+  all- is transforming everything*/
+}
+/* transition has to be directed to the action in hover */
+
+section:hover {
+  background-color: steelblue;
+  transform: scale(1.2);
+  width: 400px;
+}
+/*
+@keyframes colorChange {
+  from {
+    background-color: green;
+  }
+  to {
+    background-color: violet;
+  }
+}*/
+
+@keyframes colorChange {
+  0% {
+    background: red;
+  }
+
+  50% {
+    background: rebeccapurple;
+  }
+
+  80% {
+    background: salmon;
+  }
+
+  100% {
+    background: black;
+  }
+}
+/* 
+@media onlu screen and (max-width: 500px) {
+    @keyframes anotherColorChange {
+        0% {}....etc */
